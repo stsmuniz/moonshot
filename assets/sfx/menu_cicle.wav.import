@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/menu_cicle.wav-28cd35f71c256d168ebb4c3d3eb5824c.sample"
+
+[deps]
+
+source_file="res://assets/sfx/menu_cicle.wav"
+dest_files=[ "res://.import/menu_cicle.wav-28cd35f71c256d168ebb4c3d3eb5824c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

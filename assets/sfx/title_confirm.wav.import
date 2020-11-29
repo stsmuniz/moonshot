@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/title_confirm.wav-03c571bd7e73f2984ebe7f2fb9e8b6f6.sample"
+
+[deps]
+
+source_file="res://assets/sfx/title_confirm.wav"
+dest_files=[ "res://.import/title_confirm.wav-03c571bd7e73f2984ebe7f2fb9e8b6f6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

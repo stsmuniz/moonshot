@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/9mm Gunshot _ Sound Effect!.wav-d86f8357ed77208654d8f14e699eb2c2.sample"
+
+[deps]
+
+source_file="res://assets/sfx/9mm Gunshot _ Sound Effect!.wav"
+dest_files=[ "res://.import/9mm Gunshot _ Sound Effect!.wav-d86f8357ed77208654d8f14e699eb2c2.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

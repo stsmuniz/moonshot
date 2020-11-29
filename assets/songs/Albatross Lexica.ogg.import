@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Albatross Lexica.ogg-3e8b01ea6665e79463aee7e717b8d771.oggstr"
+
+[deps]
+
+source_file="res://assets/songs/Albatross Lexica.ogg"
+dest_files=[ "res://.import/Albatross Lexica.ogg-3e8b01ea6665e79463aee7e717b8d771.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

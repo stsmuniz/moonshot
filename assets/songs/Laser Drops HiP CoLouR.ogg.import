@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Laser Drops HiP CoLouR.ogg-722e8ecef18c9f1def644764e6e3e4df.oggstr"
+
+[deps]
+
+source_file="res://assets/songs/Laser Drops HiP CoLouR.ogg"
+dest_files=[ "res://.import/Laser Drops HiP CoLouR.ogg-722e8ecef18c9f1def644764e6e3e4df.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

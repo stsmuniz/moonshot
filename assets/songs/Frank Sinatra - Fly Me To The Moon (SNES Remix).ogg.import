@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Frank Sinatra - Fly Me To The Moon (SNES Remix).ogg-3f3316a332e4ebd97dcb5c156e3cf64a.oggstr"
+
+[deps]
+
+source_file="res://assets/songs/Frank Sinatra - Fly Me To The Moon (SNES Remix).ogg"
+dest_files=[ "res://.import/Frank Sinatra - Fly Me To The Moon (SNES Remix).ogg-3f3316a332e4ebd97dcb5c156e3cf64a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

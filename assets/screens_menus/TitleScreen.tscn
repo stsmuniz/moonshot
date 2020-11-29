@@ -1,0 +1,209 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/images/main_logo.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/main_font_16.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/screens_menus/bgscroll.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/screens_menus/MenuButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/screens_menus/TitleScreen.gd" type="Script" id=5]
+[ext_resource path="res://assets/images/main_logo-1.png.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "bgscroll"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("bgscroll/Control:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -208 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "blink_start"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "bam!"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect2:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("main_logo:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 12.1257 ),
+"update": 1,
+"values": [ ExtResource( 6 ), ExtResource( 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "blink_start"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Theme" id=5]
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 111.61, 197.668 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 127.525 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.858824, 0.74902, 0.847059, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bgscroll" parent="." instance=ExtResource( 3 )]
+
+[node name="main_logo" type="Sprite" parent="."]
+position = Vector2( 130.11, 116.495 )
+scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 65.0
+margin_top = 132.0
+margin_right = 189.0
+margin_bottom = 150.0
+custom_fonts/font = ExtResource( 2 )
+text = "Press Shoot"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuAnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "blink_start"
+anims/bgscroll = SubResource( 1 )
+anims/blink_start = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "blink_start"
+anims/bam! = SubResource( 3 )
+anims/blink_start = SubResource( 4 )
+
+[node name="Copyright" type="Label" parent="."]
+margin_left = 34.9063
+margin_top = 196.985
+margin_right = 219.906
+margin_bottom = 217.985
+custom_fonts/font = ExtResource( 2 )
+text = " Artmuniz and Stsmuniz 
+Developed for GameOff by Github"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="Control" parent="."]
+visible = false
+anchor_left = 0.424
+anchor_top = 0.638
+anchor_right = 0.581
+anchor_bottom = 0.817
+margin_left = -38.544
+margin_top = -17.912
+margin_right = 39.264
+margin_bottom = -18.008
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu"]
+margin_right = 118.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGameButton" parent="Menu/VBoxContainer" instance=ExtResource( 4 )]
+focus_neighbour_bottom = NodePath("../LoadGameButton")
+theme = SubResource( 5 )
+
+[node name="LoadGameButton" parent="Menu/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 19.0
+margin_bottom = 34.0
+focus_neighbour_top = NodePath("../NewGameButton")
+focus_neighbour_bottom = NodePath("../OptionsButton")
+text = "Load Game"
+
+[node name="OptionsButton" parent="Menu/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 38.0
+margin_bottom = 53.0
+focus_neighbour_top = NodePath("../LoadGameButton")
+focus_neighbour_bottom = NodePath("../QuitGameButton")
+text = "Options"
+
+[node name="QuitGameButton" parent="Menu/VBoxContainer" instance=ExtResource( 4 )]
+margin_top = 57.0
+margin_bottom = 72.0
+focus_neighbour_top = NodePath("../OptionsButton")
+text = "Quit Game"
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Menu/VBoxContainer/NewGameButton" to="." method="_on_NewGameButton_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/LoadGameButton" to="." method="_on_LoadGameButton_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/QuitGameButton" to="." method="_on_QuitGameButton_pressed"]

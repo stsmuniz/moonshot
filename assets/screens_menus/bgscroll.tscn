@@ -1,0 +1,195 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/images/transparent_logo.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "bgscroll"
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -146, -146 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "blink_start"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="bgscroll" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="Control" type="Control" parent="."]
+margin_left = 30.0
+margin_top = 30.0
+margin_right = 286.0
+margin_bottom = 478.0
+rect_rotation = -45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="transparent_logo" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 46.299, 165.205 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo3" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -57.7013, 165.205 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo24" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -170.838, 165.205 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo2" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 150.299, 165.205 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo4" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 254.299, 165.205 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo5" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 78.299, 61.2047 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo6" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -25.7013, 61.2047 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo9" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -129.701, 61.2047 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo7" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 182.299, 61.2047 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo8" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 286.299, 61.2047 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo10" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 46.299, 371.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo11" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -57.7013, 371.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo25" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -170.838, 371.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo12" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 150.299, 371.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo13" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 254.299, 371.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo14" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 78.299, 267.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo15" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -25.7013, 267.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo16" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -129.701, 267.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo17" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 182.299, 267.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo18" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 286.299, 267.68 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo19" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 78.2989, 474.155 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo20" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -25.7014, 474.155 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo21" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( -129.701, 474.155 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo22" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 182.299, 474.155 )
+texture = ExtResource( 1 )
+
+[node name="transparent_logo23" type="Sprite" parent="Control"]
+self_modulate = Color( 0.368627, 0.176471, 0.176471, 0.596078 )
+position = Vector2( 286.299, 474.155 )
+texture = ExtResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "bgscroll"
+anims/bgscroll = SubResource( 1 )
+anims/blink_start = SubResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 352.223
+margin_top = 235.117
+margin_right = 353.223
+margin_bottom = 491.117
+rect_rotation = 45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

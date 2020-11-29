@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/CharacterStats.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/screens_menus/OptionsButton.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[node name="ScreenModeButton" type="Button"]
+margin_left = 129.0
+margin_top = -3.0
+margin_right = 239.0
+margin_bottom = 20.0
+custom_styles/focus = SubResource( 1 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.498039, 0.498039, 0.498039, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.752941, 0.752941, 0.752941, 1 )
+text = "Fullscreen"
+flat = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="focus_entered" from="." to="." method="_on_ScreenModeButton_focus_entered"]
+[connection signal="pressed" from="." to="." method="_on_ScreenModeButton_pressed"]

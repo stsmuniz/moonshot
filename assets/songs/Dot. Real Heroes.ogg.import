@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dot. Real Heroes.ogg-39dc8f0f281a29c2b292b06c6225be1e.oggstr"
+
+[deps]
+
+source_file="res://assets/songs/Dot. Real Heroes.ogg"
+dest_files=[ "res://.import/Dot. Real Heroes.ogg-39dc8f0f281a29c2b292b06c6225be1e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
